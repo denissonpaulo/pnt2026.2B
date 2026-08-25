@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <a href="../index.html"><img src="../icone/businessman.png" alt="Logo da empresa" /></a>
+    <br />
+
+    <h1>Formulário de Cadastro de Usuários</h1>
+
+    <form name="cad_user" action="bd/senhas.html" method="post">
+        <label for="nome">Informe seu nome: </label>
+        <input type="text" name="nome" id="nome"/><br/>
+
+        <label for="senha">Informe sua senha: </label>
+        <input type="password" name="senha" id="senha" required/><br/>
+
+        <label for="email">Informe seu e-mail: </label>
+        <input type="email" name="email" id="email" placeholder="exemplo@suaempresa.com"/><br/>
+
+        <label for="data">Informe data de nascimento: </label>
+        <input type="date" name="data" id="data"/><br/>
+
+        <input type="submit" value="Cadastrar"/>
+    </form>
+
+
+    
+</body>
+</html>
