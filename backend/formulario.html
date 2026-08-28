@@ -13,10 +13,10 @@
 
     <form name="cad_user" action="bd/senhas.html" method="post">
         <label for="nome">Informe seu nome: </label>
-        <input type="text" name="nome" id="nome"/><br/>
+        <input type="text" name="nome" id="nome" required/><br/>
 
         <label for="senha">Informe sua senha: </label>
-        <input type="password" name="senha" id="senha" required/><br/>
+        <input type="password" name="senha" id="senha" maxlength="8"/><br/>
 
         <label for="email">Informe seu e-mail: </label>
         <input type="email" name="email" id="email" placeholder="exemplo@suaempresa.com"/><br/>
@@ -24,6 +24,38 @@
         <label for="data">Informe data de nascimento: </label>
         <input type="date" name="data" id="data"/><br/>
 
+        <b>Horário da reunião do time</b><br/>
+        <input type="radio" name="reuniao" id="manha" value="manha"/>
+        <label for="manha">Manhã</label><br/>
+        <input type="radio" name="reuniao" id="tarde" value="tarde"/>
+        <label for="tarde">Tarde</label><br/>
+        <input type="radio" name="reuniao" id="noite" value="noite"/>
+        <label for="noite">Noite</label><br/>
+
+        <b>Tipo de reunião</b><br/>
+        <input type="checkbox" name="tipo" id="remota" value="remota"/>
+        <label for="remota">Remota</label><br/>
+        <input type="checkbox" name="tipo" id="presencial" value="presencial" checked/>
+        <label for="presencial">Presencial</label><br/>
+        <input type="checkbox" name="tipo" id="hibrida" value="hibrida"/>
+        <label for="hibrida">Hibrída</label><br/>
+
+        <b>Selecione seu estado:</b>
+        <select name="estado">
+		    <option value="PE" selected />PERNAMBUCO
+		    <option value="BA" />BAHIA
+		    <option value="PB" />PARAIBA
+		    <option value="PA"/>PARANÁ
+	    </select>
+	    <br/>
+	    
+	    <b>OBSERVAÇÃO</b>
+	    <textarea rows="10" cols="30" maxlength="150">
+	    O gato estava brincando no jardim.
+	    </textarea>
+
+        <br/>
+        <input type="reset" value="Limpar">
         <input type="submit" value="Cadastrar"/>
     </form>
 
