@@ -1,0 +1,25 @@
+/*
+Este CSS esta sendo aplicado ao arquivo index.html e coletadados.html
+*/
+
+h1 {
+    color:green;
+    font-size: 20px;
+}
+
+p {
+    color:#0c10e6;
+    margin-left: 50px;
+
+}
+
+legend {color:rgb(168, 145, 64)}
+
+body {
+    background-color: grey;
+    background-image: url(../midia/Background-clouds.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: 280px;
+}
