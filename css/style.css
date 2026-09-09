@@ -5,21 +5,68 @@ Este CSS esta sendo aplicado ao arquivo index.html e coletadados.html
 h1 {
     color:green;
     font-size: 20px;
+    text-decoration: blink;  /* desativado por questão de usabilidade*/
 }
 
 p {
     color:#0c10e6;
     margin-left: 50px;
+    text-align: justify;
 
 }
 
-legend {color:rgb(168, 145, 64)}
+p.vermelho {
+    color:rgb(237, 48, 10);
+    text-decoration: underline double #0c10e6;
+}
+
+legend.arquivo {
+    color:blue;
+    text-decoration: underline;
+}
+
+legend.pesquisa {
+    color:#aafb3f;
+    text-decoration: line-through;
+}
+
+legend.noticias {
+    color:rgb(237, 48, 10);
+    text-decoration: overline;
+}
+
+legend.pagina {
+    color:blueviolet;
+}
 
 body {
-    background-color: grey;
+    background-color: rgb(233, 243, 252);
     background-image: url(../midia/Background-clouds.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: top center;
+    background-position: top left;
     background-size: 280px;
+}
+
+a.removeSublinhado {
+    text-decoration: none;
+}
+
+
+ul {
+    text-indent: 100px;
+}
+
+
+
+li.uppercase {
+    text-transform: uppercase;
+}
+
+li.lowercase {
+    text-transform: lowercase;
+}
+
+li.capitalize {
+    text-transform: capitalize;
 }
