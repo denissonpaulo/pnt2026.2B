@@ -9,3 +9,19 @@ ol{
 ol.gif {
     list-style-image: url(../icone/newsletter.png);
 }
+
+a {
+    color: blue;
+}
+
+a.virtuais {
+    color: #FF0000;
+}
+
+a.estrategia {
+    color: #11CC00;
+}
+
+#uramaki {
+    color: #1ef78a;
+}
