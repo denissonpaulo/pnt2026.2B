@@ -55,6 +55,10 @@ a.removeSublinhado {
     text-decoration: none;
 }
 
+a.bt {
+    color:#aafb3f;
+}
+
 a:hover {
     color:#aafb3f;
 }

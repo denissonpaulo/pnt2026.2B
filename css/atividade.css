@@ -4,4 +4,65 @@ body {
 
 h1 {
     padding: 10px 10px 10px 300px;
+
+}
+
+.todos {
+    color: blue;
+}
+
+.standard {
+    color: blueviolet;
+}
+
+.luxo {
+    color: darkgreen;
+}
+
+div.botoes {
+    width: 800px;
+    height: 228px;
+    border: 2px solid gray;
+    background-color: orange;
+}
+
+img.esq {
+    width: 240px;
+    height: 227px;
+    float: left;
+}
+
+img.dir {
+    width: 240px;
+    height: 227px;
+    float: right;
+}
+
+img:hover {
+    background-position: 0px -78px;
+}
+
+.newsletter{
+    float: left;
+    width: 100px;
+}
+
+.newsletter:hover{
+    color: blue;
+}
+
+p {
+    clear: both;
+}
+
+.menu ul li {
+    background: url(/icone/newsletter.png) no-repeat scroll 0 0 transparent;
+}
+
+.menu ul li a{
+    background-position: 0px 0px;
+}
+
+.menu ul li.email a:hover{
+    background-position: 0px -78px;
 }
