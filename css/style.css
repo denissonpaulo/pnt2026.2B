@@ -1,54 +1,68 @@
-/*
-Este CSS esta sendo aplicado ao arquivo index.html e coletadados.html
-*/
+/* ==========================================================================
+   Atividade CSS Document Unificado - PNT 2026.2B
+   Baseado nos Módulos 1, 2, 3 e 4 de CSS
+   ========================================================================== */
 
-h1 {
-    color:green;
-    font-size: xx-large;
-    text-decoration: blink;  /* desativado por questão de usabilidade*/
-}
-
-p {
-    color:#0c10e6;
-    margin-left: 50px;
-    text-align: justify;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-span.vermelho {
-    color:rgb(237, 48, 10);
-    text-decoration: underline double #0c10e6;
-}
-
-legend.arquivo {
-    color:blue;
-    text-decoration: underline;
-}
-
-legend.pesquisa {
-    color:#aafb3f;
-    text-decoration: line-through;
-}
-
-legend.noticias {
-    color:rgb(237, 48, 10);
-    text-decoration: overline;
-}
-
-legend.pagina {
-    color:blueviolet;
-}
-
+/* 1. Configurações Globais de Corpo e Fundo */
 body {
     background-color: rgb(233, 243, 252);
-    background-image: url(../midia/Background-clouds.jpg);
+    background-image: url('../midia/Background-clouds.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: top left;
     background-size: 280px;
-
     font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 40px;
+    color: #0c10e6;
+}
+
+/* 2. Tipografia e Cabeçalhos */
+h1 {
+    color: green;
+    font-size: xx-large;
+    text-decoration: none; /* Desativado blink por usabilidade */
+    padding: 10px;
+}
+
+h2 {
+    color: blueviolet;
+    font-size: x-large;
+}
+
+p {
+    color: #0c10e6;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+/* 3. Estilização de Textos e Modificadores */
+span.vermelho {
+    color: rgb(237, 48, 10);
+    text-decoration: underline double #0c10e6;
+}
+
+p.uppercase, li.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase, li.lowercase {
+    text-transform: lowercase;
+}
+
+p.capitalize, li.capitalize {
+    text-transform: capitalize;
+}
+
+li.italico {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* 4. Links e Pseudo-classes */
+a {
+    color: blue;
+    text-decoration: none;
 }
 
 a.removeSublinhado {
@@ -56,52 +70,122 @@ a.removeSublinhado {
 }
 
 a.bt {
-    color:#aafb3f;
+    color: #aafb3f;
 }
 
 a:hover {
-    color:#aafb3f;
+    color: #aafb3f;
 }
 
+/* Categorias de Links (Aula 4) */
+a.virtuais {
+    color: #FF0000; /* Vermelho para jogos virtuais */
+}
 
+a.estrategia {
+    color: #11CC00; /* Verde para jogos de estratégia */
+}
+
+#uramaki {
+    color: #1ef78a;
+    font-weight: bold;
+}
+
+/* 5. Listas e Marcadores */
 ul {
-    text-indent: 100px;
+    list-style-type: square;
+    text-indent: 20px;
     list-style-position: inside;
 }
 
-
-
-li.uppercase {
-    text-transform: uppercase;
+ol {
+    list-style-type: upper-roman;
 }
 
-li.lowercase {
-    text-transform: lowercase;
+ol.gif {
+    list-style-image: url('../icone/newsletter.png');
 }
 
-li.capitalize {
-    text-transform: capitalize;
-}
-
-li.italico {
-    font-style: normal;
-    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-}
-
+/* 6. Tabelas Tradicionais */
 table, th, td {
     border: 1px solid #0c10e6;
     border-collapse: separate;
-
 }
-table{
+
+table {
     background-color: aqua;
     width: 100%;
+    margin-top: 20px;
 }
 
 th {
     height: 30px;
+    background-color: #2563eb;
+    color: #ffffff;
 }
 
 td {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
+}
+
+/* 7. Legendas e Componentes (Fieldset/Divs) */
+legend.arquivo {
+    color: blue;
+    text-decoration: underline;
+}
+
+legend.pesquisa {
+    color: #aafb3f;
+    text-decoration: line-through;
+}
+
+legend.noticias {
+    color: rgb(237, 48, 10);
+    text-decoration: overline;
+}
+
+legend.pagina {
+    color: blueviolet;
+}
+
+.todos { color: blue; }
+.standard { color: blueviolet; }
+.luxo { color: darkgreen; }
+
+/* Posicionamento de Elementos e Layout (Aula 4) */
+div.botoes {
+    width: 800px;
+    height: 228px;
+    border: 2px solid gray;
+    background-color: orange;
+    margin: 20px 0;
+}
+
+img.esq {
+    width: 240px;
+    height: 227px;
+    float: left;
+}
+
+img.dir {
+    width: 240px;
+    height: 227px;
+    float: right;
+}
+
+img:hover {
+    background-position: 0px -78px;
+}
+
+.newsletter {
+    float: left;
+    width: 100px;
+}
+
+.newsletter:hover {
+    color: blue;
+}
+
+p.clear {
+    clear: both;
 }

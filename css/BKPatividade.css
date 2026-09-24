@@ -66,3 +66,45 @@ p {
 .menu ul li.email a:hover{
     background-position: 0px -78px;
 }
+
+a.button {
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(187, 69, 69);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-image: url(/icone/newsletter.png);
+    text-indent: -9999px;
+}
+
+a#link {
+    width: 174px;
+    background-position: 0px 0px;
+}
+
+a#framing {
+    width: 210px;
+    background-position: -175px 0px;
+}
+
+a#link:hover {
+    background-position: 0px -40px;
+}
+
+a#framing:hover {
+    background-position: -175px -40px;
+}
+
+a#link:active {
+    background-position: 0px -80px;
+}
+
+a#framing:active {
+    background-position: -175px -80px;
+}
+
