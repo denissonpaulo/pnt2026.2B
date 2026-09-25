@@ -25,6 +25,14 @@ h1 {
     padding: 10px;
 }
 
+h1.titulo {
+    color: green;
+    font-size: xx-large;
+    text-decoration: none; /* Desativado blink por usabilidade */
+    padding: 10px;
+    margin-top: 190px;
+}
+
 h2 {
     color: blueviolet;
     font-size: x-large;
@@ -34,6 +42,12 @@ p {
     color: #0c10e6;
     margin-left: 50px;
     text-align: justify;
+}
+
+.bt-link {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 60px;
 }
 
 /* 3. Estilização de Textos e Modificadores */
@@ -70,7 +84,7 @@ a.removeSublinhado {
 }
 
 a.bt {
-    color: #aafb3f;
+    color: #eff5e8;
 }
 
 a:hover {
@@ -159,6 +173,13 @@ div.botoes {
     border: 2px solid gray;
     background-color: orange;
     margin: 20px 0;
+}
+
+img.logo {
+    width: 240px;
+    height: 227px;
+    float: left;
+    clear: both;
 }
 
 img.esq {

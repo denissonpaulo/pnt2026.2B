@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <!-- Definindo responsividade na pagina web -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santander</title>
+    <title>Modulo CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/> -->
-    
 </head>
 <body>
-    <img src="icone/businessman.png" alt="Logo da empresa" />
+    <img src="icone/businessman.png" alt="Logo da empresa" class="logo"/>
+    <a name="inicio"></a>
 
     <div id="botoes_menu">
         <button type="button" class="btn btn-primary"><a class="bt" href="atividades.html">Atividades</a></button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-secondary"><a class="bt" href="backend/tabelas.html">Tabelas</a></button>
+        <button type="button" class="btn btn-success"><a class="bt" href="backend/lista.html">Listas</a></button>
+        <button type="button" class="btn btn-danger"><a class="bt" href="backend/formulario.html">Formulário</a></button>
+        <button type="button" class="btn btn-warning"><a class="bt" href="backend/users.html">Usuários</a></button>
+        <button type="button" class="btn btn-info"><a class="bt" href="backend/coletdados.html">Coleta de Dados</a></button>
+        <button type="button" class="btn btn-light"><a href="backend/bd/senhas.html">Senhas</a></button>
+        <button type="button" class="btn btn-dark"><a href="https://www.google.com" target="_blank">Google</a></button>
 
-        <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div>
+        <p>
+            <h1>Atividade CSS Document Unificado - PNT 2026.2</h1>
+            <h1>PROF.: DENISSON PAULO</h1>
+        </p>
     </div>
 
-    <a name="inicio"></a><br/>
-    <h1>DENISSON PAULO</h1>
+    <div>
+        <p class="bt-link">
+            <button type="button" class="btn btn-link"><a href="#menu" class="bt-link">Menu</a></button>
+        </p>
+    </div>
 
-    <p><a href="#menu">Menu</a></p>
     <p><b>Teste</b> Texto T Texto Texto <br /> Texto Texto Texto TextoTexto <br/> Texto Texto</p>
     
     <hr />
@@ -101,7 +108,7 @@
 
 
     <p><a href="#inicio" class="removeSublinhado">Inicio</a></p>
-
+    <a name="final"></a>
 
 
 </body>
