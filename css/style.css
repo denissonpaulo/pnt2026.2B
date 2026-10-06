@@ -210,3 +210,11 @@ img:hover {
 p.clear {
     clear: both;
 }
+
+.margem {
+    margin: 20px;
+}
+
+.margemLista {
+    margin: 200px 10px 10px 10px;
+}
