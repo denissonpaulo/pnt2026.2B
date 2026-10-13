@@ -22,7 +22,7 @@ var resp = window.document.getElementById('saida');
 function acao1() {
     resp.innerHTML += '<p>Clicou no primeiro botão</p>'
     
-    var a = prompt("Informe um número");
+    let a = prompt("Informe um número");
     if (a === 6) { 	
         resp.innerHTML += '<h1>Igual de 6</h1>';
     } else {				
@@ -53,8 +53,8 @@ function acao2() {
 function acao3() {
     resp.innerHTML += '<p>Clicou no terceiro botão</p>'
 
-    var numero = prompt("Informe um número");
-    for (i = 0; i < numero; i++){
+    let numero = prompt("Informe um número");
+    for (let i = 0; i < numero; i++){
         resp.innerHTML += '<p>Paragrafo ' + i + '</p>';
     }
 }
@@ -62,17 +62,17 @@ function acao3() {
 function acao4() {
     resp.innerHTML += '<p>Clicou no quarto botão</p>'
 
-    var var1  = prompt("Informe um número");
-    while (var1 <= 10) {	
-         resp.innerHTML += 'linha '+var1+'<br/>';
-         var1++;
+    let numero  = prompt("Informe um número");
+    while (numero <= 10) {	
+         resp.innerHTML += 'linha '+numero+'<br/>';
+         numero++;
     }    
 }
 
 function acao5() {
     resp.innerHTML += '<p>Clicou no quinto botão</p>'
 
-    var var1 = prompt("Informe um número");
+    let var1 = prompt("Informe um número");
     do {	
         resp.innerHTML += 'linha '+var1+'<br/>';
         var1++;
@@ -82,7 +82,7 @@ function acao5() {
 function acao6() {
     resp.innerHTML += '<p>Clicou no sexto botão</p>'
 
-    var myArray = [1,2,3,4,5,6,7,8,9,10,11];
+    let myArray = [1,2,3,4,5,6,7,8,9,10,11];
 
     myArray.forEach(function(value, key) {
         resp.innerHTML += 'Chave: '+key+' Valor: '+value+'<br/>';
@@ -92,7 +92,7 @@ function acao6() {
 
 function acao7() {
     
-    var entrada = "Bem vindo " + prompt("Informe seu Nome: ");
+    let entrada = "Bem vindo " + prompt("Informe seu Nome: ");
     var saldacao = document.getElementById('titulo');
     saldacao.textContent = entrada;    
 
@@ -107,7 +107,7 @@ function acao7() {
 
     document.getElementsByTagName("p")[1].innerHTML = "Texto do paragrafo 2 substituido com sucesso!";
 
-    var teste = document.getElementsByName("paragrafo");
+    let teste = document.getElementsByName("paragrafo");
     teste[1].textContent = 'Texto do paragrafo identificado por "paragrafo" na posição 1, substituido com sucesso!';
 }
 
@@ -116,7 +116,7 @@ function acao8() {
     resp.innerHTML += '<p>Clicou no oitavo botão</p>';
 
     function calcularArea() {
-        var area = 3*5;
+        let area = 3*5;
         resp.innerHTML +=  '<h1>Área total: '+ area +'</h1>';
     }
     calcularArea();
@@ -127,14 +127,14 @@ function acao8() {
 function acao9() {
     resp.innerHTML += '<p>Clicou no nono botão</p>'
 
-    var largura = prompt("Informe largura");
-    var altura = prompt("Informe altura");
+    let largura = prompt("Informe largura");
+    let altura = prompt("Informe altura");
 
     function getArea(width, height) {
-        var calculateArea = width * height;
+        let calculateArea = width * height;
         return calculateArea;
     }
-    var area = getArea(largura, altura);
+    let area = getArea(largura, altura);
     resp.innerHTML +=  '<h1>Área total: '+ area +'</h1>';	
 }
 
@@ -143,7 +143,7 @@ function acao10() {
     resp.innerHTML += '<p>Clicou no decimo botão</p>'
 
     // Set Item
-    var login = ['user', '********'];
+    let login = ['user', '********'];
     sessionStorage.setItem("acessoOn", login);
     // Retrieve
     document.getElementById("session").innerHTML = sessionStorage.getItem("acessoOn");
@@ -153,7 +153,7 @@ function acao10() {
 function acao11() {
     resp.innerHTML += '<p>Clicou no decimo primeiro botão</p>'
     //Criando um objeto notação literal.
-    var hotel = { //O objeto é declarado como uma variavel.
+    let hotel = { //O objeto é declarado como uma variavel.
         nome: 'Por do Sol', //as chaves são separadas do seu valor por dois pontos. Igual ao CSS.
         quartos: 40, //Separa com virgula cada propriedade e método.
         reservados: 25,
@@ -165,10 +165,10 @@ function acao11() {
         } //A palavra chave this indica que ele usa as prorpiedades deste objeto.
     };
 
-    var atrNome = document.getElementById('nome');
+    let atrNome = document.getElementById('nome');
     atrNome.textContent = hotel.nome; //Acessando um objeto com a notação de ponto.
     //O ponto é conhecido como: Operador de membro.
-    var atrQuartos = document.getElementById('quartos');
+    let atrQuartos = document.getElementById('quartos');
     atrQuartos.textContent = hotel.checkAvailability();  
 }
 
@@ -177,7 +177,7 @@ function acao12() {
     resp.innerHTML += '<p>Clicou no decimo segundo botão</p>'
 
         //Criando objeto notação de construtor.
-        var carro = new Object(); //Função do construtor object(). 
+        let carro = new Object(); //Função do construtor object(). 
 
             carro.modelo= 'tracker'; //
             carro.ano= 2025;
@@ -189,13 +189,13 @@ function acao12() {
                 return this.proxTrocaOleo - this.kmAtual;
             };        
     
-        var atrModelo = document.getElementById('modelo');
+        let atrModelo = document.getElementById('modelo');
         atrModelo.textContent = carro.modelo; //Acessando um objeto com a notação de ponto.
     
-        var atrProxTrocaOleo = document.getElementById('oleoMotor');
+        let atrProxTrocaOleo = document.getElementById('oleoMotor');
         atrProxTrocaOleo.textContent = carro.checkStatus();  
 
-        var atrKmAtual = document.getElementById('kmAtual');
+        let atrKmAtual = document.getElementById('kmAtual');
         atrKmAtual.textContent = carro.kmAtual;
          
 }
@@ -240,7 +240,7 @@ function acao13() {
 function acao14() {
     resp.innerHTML += '<p>Clicou no decimo quarto botão</p>'
 
-    var bd = 'Para conectar ao Banco de dados aprenda Node JS primeiro'
+    let bd = 'Para conectar ao Banco de dados aprenda Node JS primeiro'
 
 
     document.getElementById('saida').innerHTML = '<h1>'+ bd +'</h1>';
