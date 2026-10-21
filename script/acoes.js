@@ -123,7 +123,6 @@ function acao8() {
          
 }
 
-
 function acao9() {
     resp.innerHTML += '<p>Clicou no nono botão</p>'
 
@@ -175,7 +174,7 @@ function acao11() {
 
 function acao12() {
     resp.innerHTML += '<p>Clicou no decimo segundo botão</p>'
-
+        //Livro: JavaScript and Jquery John Duckett - Capítulo 5 - Objetos e Funções
         //Criando objeto notação de construtor.
         let carro = new Object(); //Função do construtor object(). 
 
@@ -233,7 +232,9 @@ function acao13() {
     ];
 
     for (var i = 0; i < listaObj.length; i++) {
-        document.getElementById('item').innerHTML += 'Item: <b>' + listaObj[i].nome + ' </b>' + 'Área Ocupada: <b>' + listaObj[i].checkAreaOcupada() + ' </b>' +'Peso: <b>' + listaObj[i].peso + ' </b> <br/>'; 
+        document.getElementById('item').innerHTML += 'Item: <b>' + listaObj[i].nome + ' </b>' + 
+        'Área Ocupada: <b>' + listaObj[i].checkAreaOcupada() + ' </b>' +'Peso: <b>' + listaObj[i].peso + 
+        ' </b> <br/>'; 
     }
 }
 
